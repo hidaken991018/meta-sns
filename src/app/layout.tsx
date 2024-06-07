@@ -1,6 +1,7 @@
+"use client"
 // app/layout.tsx
 import { ThemeProvider } from '@aws-amplify/ui-react';
-import '../styles/globals.css';
+import './globals.css';
 import config from '../aws-exports';
 import { Amplify } from 'aws-amplify';
 

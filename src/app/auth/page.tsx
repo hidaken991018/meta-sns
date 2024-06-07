@@ -1,3 +1,4 @@
+"use client"
 // app/auth/page.tsx
 import { withAuthenticator } from '@aws-amplify/ui-react';
 
