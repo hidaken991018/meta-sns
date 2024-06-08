@@ -1,0 +1,7 @@
+schema: schema.graphql
+documents: amplify/backend/api/0210amplify/schema.graphql
+generates:
+  src/graphql/client.ts:
+    plugins:
+      - typescript
+      - typescript-operations

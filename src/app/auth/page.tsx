@@ -1,13 +1,24 @@
 "use client"
 // app/auth/page.tsx
-import { withAuthenticator } from '@aws-amplify/ui-react';
+import { Authenticator } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
 
-function AuthPage() {
+type Props = {
+  signOut: () => void;
+  user: any;
+}
+
+function AuthPage(
+  // { signOut, user }
+) {
   return (
-    <div>
-      <h1>ログイン</h1>
-    </div>
+    <Authenticator >
+      {/* <div>
+        <h1>Welcome, {user.username}</h1>
+        <button onClick={signOut}>Sign out</button>
+      </div> */}
+    </Authenticator>
   );
 }
 
-export default withAuthenticator(AuthPage);
+export default AuthPage;

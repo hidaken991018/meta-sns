@@ -9,8 +9,12 @@ Amplify.configure(config);
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <ThemeProvider>
-      {children}
-    </ThemeProvider>
+    <html lang="ja">
+      <body>
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
+      </body>
+    </html>
   );
 }
